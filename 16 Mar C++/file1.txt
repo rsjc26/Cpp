@@ -1,0 +1,22 @@
+#include<fstream>
+#include<iostream>
+using namespace std;
+int main()
+{
+fstream fin;
+
+fin.open("file.text");
+int count=' ';
+char word[30];
+
+
+while(fin>>word)
+{
+count++;
+
+}
+cout<<"total space:"<<count;
+fin.close();
+
+return 0;
+}
